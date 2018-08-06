@@ -12,6 +12,13 @@
 		84020E1821189C88007E16BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84020E1621189C88007E16BF /* Main.storyboard */; };
 		84020E1A21189C88007E16BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84020E1921189C88007E16BF /* Assets.xcassets */; };
 		84020E1D21189C88007E16BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84020E1B21189C88007E16BF /* LaunchScreen.storyboard */; };
+		84020E302118B954007E16BF /* facebook-ads.png in Resources */ = {isa = PBXBuildFile; fileRef = 84020E2E2118B953007E16BF /* facebook-ads.png */; };
+		84020E312118B954007E16BF /* facebook-ads-api-dashboards-reports.png in Resources */ = {isa = PBXBuildFile; fileRef = 84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */; };
+		84020E332118B9D0007E16BF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84020E322118B9D0007E16BF /* FancyButton.swift */; };
+		84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C02118E52D00074BDA /* 29ltbukrabold.otf */; };
+		84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */; };
+		84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C22118E53100074BDA /* 29ltbukraregular.otf */; };
+		84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C32118E53200074BDA /* 29ltbukralight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		84020E1921189C88007E16BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84020E1C21189C88007E16BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84020E1E21189C88007E16BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84020E2E2118B953007E16BF /* facebook-ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-ads.png"; sourceTree = "<group>"; };
+		84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-ads-api-dashboards-reports.png"; sourceTree = "<group>"; };
+		84020E322118B9D0007E16BF /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FancyButton.swift; path = Teqanny/View/FancyButton.swift; sourceTree = SOURCE_ROOT; };
+		84B210C02118E52D00074BDA /* 29ltbukrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabold.otf; sourceTree = "<group>"; };
+		84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabolditalic.otf; sourceTree = "<group>"; };
+		84B210C22118E53100074BDA /* 29ltbukraregular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukraregular.otf; sourceTree = "<group>"; };
+		84B210C32118E53200074BDA /* 29ltbukralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukralight.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,69 @@
 		84020E1121189C88007E16BF /* Teqanny */ = {
 			isa = PBXGroup;
 			children = (
-				84020E1221189C88007E16BF /* AppDelegate.swift */,
-				84020E1421189C88007E16BF /* ViewController.swift */,
-				84020E1621189C88007E16BF /* Main.storyboard */,
-				84020E1921189C88007E16BF /* Assets.xcassets */,
-				84020E1B21189C88007E16BF /* LaunchScreen.storyboard */,
-				84020E1E21189C88007E16BF /* Info.plist */,
+				84020E342118D7CA007E16BF /* Resources */,
+				84020E2C21189E87007E16BF /* Other */,
+				84020E2B21189E77007E16BF /* Storyboard */,
+				84020E2921189E5A007E16BF /* Controller */,
+				84020E2821189E54007E16BF /* View */,
+				84020E2721189E4D007E16BF /* Model */,
 			);
 			path = Teqanny;
+			sourceTree = "<group>";
+		};
+		84020E2721189E4D007E16BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84020E2821189E54007E16BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84020E322118B9D0007E16BF /* FancyButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84020E2921189E5A007E16BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84020E1421189C88007E16BF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84020E2B21189E77007E16BF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84020E1621189C88007E16BF /* Main.storyboard */,
+				84020E1B21189C88007E16BF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84020E2C21189E87007E16BF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				84020E1221189C88007E16BF /* AppDelegate.swift */,
+				84020E1921189C88007E16BF /* Assets.xcassets */,
+				84020E1E21189C88007E16BF /* Info.plist */,
+				84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */,
+				84020E2E2118B953007E16BF /* facebook-ads.png */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		84020E342118D7CA007E16BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B210C02118E52D00074BDA /* 29ltbukrabold.otf */,
+				84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */,
+				84B210C32118E53200074BDA /* 29ltbukralight.otf */,
+				84B210C22118E53100074BDA /* 29ltbukraregular.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84020E1D21189C88007E16BF /* LaunchScreen.storyboard in Resources */,
+				84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */,
+				84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */,
+				84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */,
+				84020E312118B954007E16BF /* facebook-ads-api-dashboards-reports.png in Resources */,
 				84020E1A21189C88007E16BF /* Assets.xcassets in Resources */,
+				84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */,
+				84020E302118B954007E16BF /* facebook-ads.png in Resources */,
 				84020E1821189C88007E16BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84020E332118B9D0007E16BF /* FancyButton.swift in Sources */,
 				84020E1521189C88007E16BF /* ViewController.swift in Sources */,
 				84020E1321189C88007E16BF /* AppDelegate.swift in Sources */,
 			);
@@ -276,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDJFZFUH2Y;
-				INFOPLIST_FILE = Teqanny/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Teqanny/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Raqameyyah.Teqanny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDJFZFUH2Y;
-				INFOPLIST_FILE = Teqanny/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Teqanny/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Raqameyyah.Teqanny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
