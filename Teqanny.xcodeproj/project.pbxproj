@@ -19,6 +19,11 @@
 		84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */; };
 		84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C22118E53100074BDA /* 29ltbukraregular.otf */; };
 		84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C32118E53200074BDA /* 29ltbukralight.otf */; };
+		84D199AC2119B312007E91D1 /* course-ios-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D199A92119B311007E91D1 /* course-ios-1.png */; };
+		84D199AD2119B312007E91D1 /* course-ios-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D199AA2119B311007E91D1 /* course-ios-2.png */; };
+		84D199AE2119B312007E91D1 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84D199AB2119B312007E91D1 /* bg.jpg */; };
+		84D199B02119CBB8007E91D1 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84D199AF2119CBB5007E91D1 /* profile.jpg */; };
+		84D199B22119CBFB007E91D1 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D199B12119CBFB007E91D1 /* FancyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabolditalic.otf; sourceTree = "<group>"; };
 		84B210C22118E53100074BDA /* 29ltbukraregular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukraregular.otf; sourceTree = "<group>"; };
 		84B210C32118E53200074BDA /* 29ltbukralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukralight.otf; sourceTree = "<group>"; };
+		84D199A92119B311007E91D1 /* course-ios-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course-ios-1.png"; sourceTree = "<group>"; };
+		84D199AA2119B311007E91D1 /* course-ios-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course-ios-2.png"; sourceTree = "<group>"; };
+		84D199AB2119B312007E91D1 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		84D199AF2119CBB5007E91D1 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		84D199B12119CBFB007E91D1 /* FancyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				84020E322118B9D0007E16BF /* FancyButton.swift */,
+				84D199B12119CBFB007E91D1 /* FancyImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +127,6 @@
 				84020E1221189C88007E16BF /* AppDelegate.swift */,
 				84020E1921189C88007E16BF /* Assets.xcassets */,
 				84020E1E21189C88007E16BF /* Info.plist */,
-				84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */,
-				84020E2E2118B953007E16BF /* facebook-ads.png */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -129,6 +138,12 @@
 				84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */,
 				84B210C32118E53200074BDA /* 29ltbukralight.otf */,
 				84B210C22118E53100074BDA /* 29ltbukraregular.otf */,
+				84D199AB2119B312007E91D1 /* bg.jpg */,
+				84D199AF2119CBB5007E91D1 /* profile.jpg */,
+				84D199A92119B311007E91D1 /* course-ios-1.png */,
+				84D199AA2119B311007E91D1 /* course-ios-2.png */,
+				84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */,
+				84020E2E2118B953007E16BF /* facebook-ads.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -193,13 +208,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				84020E1D21189C88007E16BF /* LaunchScreen.storyboard in Resources */,
+				84D199B02119CBB8007E91D1 /* profile.jpg in Resources */,
 				84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */,
+				84D199AC2119B312007E91D1 /* course-ios-1.png in Resources */,
 				84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */,
 				84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */,
 				84020E312118B954007E16BF /* facebook-ads-api-dashboards-reports.png in Resources */,
+				84D199AD2119B312007E91D1 /* course-ios-2.png in Resources */,
 				84020E1A21189C88007E16BF /* Assets.xcassets in Resources */,
 				84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */,
 				84020E302118B954007E16BF /* facebook-ads.png in Resources */,
+				84D199AE2119B312007E91D1 /* bg.jpg in Resources */,
 				84020E1821189C88007E16BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +232,7 @@
 			files = (
 				84020E332118B9D0007E16BF /* FancyButton.swift in Sources */,
 				84020E1521189C88007E16BF /* ViewController.swift in Sources */,
+				84D199B22119CBFB007E91D1 /* FancyImageView.swift in Sources */,
 				84020E1321189C88007E16BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
