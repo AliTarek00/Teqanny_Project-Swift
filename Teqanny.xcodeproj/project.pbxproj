@@ -15,6 +15,8 @@
 		84020E302118B954007E16BF /* facebook-ads.png in Resources */ = {isa = PBXBuildFile; fileRef = 84020E2E2118B953007E16BF /* facebook-ads.png */; };
 		84020E312118B954007E16BF /* facebook-ads-api-dashboards-reports.png in Resources */ = {isa = PBXBuildFile; fileRef = 84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */; };
 		84020E332118B9D0007E16BF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84020E322118B9D0007E16BF /* FancyButton.swift */; };
+		8480D1E0211A423600F7F414 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 8480D1DF211A423400F7F414 /* me.png */; };
+		8480D1E2211A4BF800F7F414 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480D1E1211A4BF800F7F414 /* SourceViewController.swift */; };
 		84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C02118E52D00074BDA /* 29ltbukrabold.otf */; };
 		84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */; };
 		84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C22118E53100074BDA /* 29ltbukraregular.otf */; };
@@ -37,6 +39,8 @@
 		84020E2E2118B953007E16BF /* facebook-ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-ads.png"; sourceTree = "<group>"; };
 		84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-ads-api-dashboards-reports.png"; sourceTree = "<group>"; };
 		84020E322118B9D0007E16BF /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FancyButton.swift; path = Teqanny/View/FancyButton.swift; sourceTree = SOURCE_ROOT; };
+		8480D1DF211A423400F7F414 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		8480D1E1211A4BF800F7F414 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		84B210C02118E52D00074BDA /* 29ltbukrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabold.otf; sourceTree = "<group>"; };
 		84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabolditalic.otf; sourceTree = "<group>"; };
 		84B210C22118E53100074BDA /* 29ltbukraregular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukraregular.otf; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				84020E1421189C88007E16BF /* ViewController.swift */,
+				8480D1E1211A4BF800F7F414 /* SourceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				84B210C22118E53100074BDA /* 29ltbukraregular.otf */,
 				84D199AB2119B312007E91D1 /* bg.jpg */,
 				84D199AF2119CBB5007E91D1 /* profile.jpg */,
+				8480D1DF211A423400F7F414 /* me.png */,
 				84D199A92119B311007E91D1 /* course-ios-1.png */,
 				84D199AA2119B311007E91D1 /* course-ios-2.png */,
 				84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */,
@@ -220,6 +226,7 @@
 				84020E302118B954007E16BF /* facebook-ads.png in Resources */,
 				84D199AE2119B312007E91D1 /* bg.jpg in Resources */,
 				84020E1821189C88007E16BF /* Main.storyboard in Resources */,
+				8480D1E0211A423600F7F414 /* me.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8480D1E2211A4BF800F7F414 /* SourceViewController.swift in Sources */,
 				84020E332118B9D0007E16BF /* FancyButton.swift in Sources */,
 				84020E1521189C88007E16BF /* ViewController.swift in Sources */,
 				84D199B22119CBFB007E91D1 /* FancyImageView.swift in Sources */,

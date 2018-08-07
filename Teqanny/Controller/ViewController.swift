@@ -13,10 +13,13 @@ class ViewController: UIViewController
     //
     override func viewDidLoad()
     {
+        // Remove the title of the back button
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style:
+            .plain, target: nil, action: nil);
+        //
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     //
     override func didReceiveMemoryWarning()
     {
