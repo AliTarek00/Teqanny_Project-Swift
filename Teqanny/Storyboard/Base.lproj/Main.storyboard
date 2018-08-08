@@ -62,25 +62,22 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJ3-QC-T86">
                                 <rect key="frame" x="0.0" y="64" width="320" height="1236"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NH7-fW-H1n">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1300"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NH7-fW-H1n" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1250"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-O8-Lid">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="dS5-h2-uWl"/>
+                                                    <constraint firstAttribute="height" constant="200" identifier="courseBGHeight" id="dS5-h2-uWl"/>
                                                 </constraints>
                                             </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c2-KA-a32">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c2-KA-a32" userLabel="CourseCoverView">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-KX-uBC">
-                                                        <rect key="frame" x="50" y="18" width="258" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="Ff5-WZ-xpA"/>
-                                                        </constraints>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-KX-uBC">
+                                                        <rect key="frame" x="40" y="18" width="268" height="34"/>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="أساسيات الاعلانات الممولة علي فيسبوك وإنستجرام">
+                                                            <fragment content="أساسيات الاعلانات الممولة على فيسبوك وإنستجرام">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <font key="NSFont" size="17" name="29LTBukra-Bold"/>
@@ -91,7 +88,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWp-Tf-o0o">
-                                                        <rect key="frame" x="70" y="60" width="238" height="21"/>
+                                                        <rect key="frame" x="70" y="59" width="238" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="5th-9P-z1g"/>
                                                         </constraints>
@@ -107,7 +104,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-41-RTc" userLabel="ratingStack">
-                                                        <rect key="frame" x="148" y="93" width="160" height="28"/>
+                                                        <rect key="frame" x="148" y="92" width="160" height="28"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btr-a7-mGU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -187,7 +184,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-XS-K2Z">
-                                                        <rect key="frame" x="12" y="135" width="66" height="28"/>
+                                                        <rect key="frame" x="12" y="134" width="66" height="28"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo4-cA-ept">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -222,7 +219,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rag-4f-9Dg">
-                                                        <rect key="frame" x="94" y="135" width="214" height="28"/>
+                                                        <rect key="frame" x="94" y="134" width="214" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="MGY-J8-1RB"/>
                                                             <constraint firstAttribute="width" constant="214" id="jzK-ah-rVB"/>
@@ -247,8 +244,8 @@
                                                     <constraint firstItem="rag-4f-9Dg" firstAttribute="top" secondItem="e3V-41-RTc" secondAttribute="bottom" constant="14" id="GRu-dZ-AOo"/>
                                                     <constraint firstItem="wXz-XS-K2Z" firstAttribute="top" secondItem="e3V-41-RTc" secondAttribute="bottom" constant="14" id="LN8-ic-Bf0"/>
                                                     <constraint firstItem="9Hl-KX-uBC" firstAttribute="top" secondItem="6c2-KA-a32" secondAttribute="top" constant="18" id="N1V-Tg-4A4"/>
-                                                    <constraint firstAttribute="height" constant="200" id="T6G-mM-3rc"/>
-                                                    <constraint firstItem="9Hl-KX-uBC" firstAttribute="leading" secondItem="6c2-KA-a32" secondAttribute="leading" constant="50" id="UnA-ok-nfS"/>
+                                                    <constraint firstAttribute="height" constant="200" identifier="courseCoverViewHeight" id="T6G-mM-3rc"/>
+                                                    <constraint firstItem="9Hl-KX-uBC" firstAttribute="leading" secondItem="6c2-KA-a32" secondAttribute="leading" constant="40" id="UnA-ok-nfS"/>
                                                     <constraint firstItem="uWp-Tf-o0o" firstAttribute="top" secondItem="9Hl-KX-uBC" secondAttribute="bottom" constant="7" id="XN5-QQ-oAh"/>
                                                     <constraint firstAttribute="trailing" secondItem="uWp-Tf-o0o" secondAttribute="trailing" constant="12" id="ZBC-1U-CnX"/>
                                                     <constraint firstItem="wXz-XS-K2Z" firstAttribute="leading" secondItem="6c2-KA-a32" secondAttribute="leading" constant="12" id="dJj-ed-EPm"/>
@@ -257,10 +254,11 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-H7-01f" customClass="FancyButton" customModule="Teqanny" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="185" width="240" height="42"/>
+                                                <rect key="frame" x="60" y="184" width="200" height="42"/>
                                                 <color key="backgroundColor" red="0.0" green="0.68235294117647061" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="O6Y-gt-vuv"/>
+                                                    <constraint firstAttribute="width" constant="200" id="VRP-GS-h37"/>
                                                 </constraints>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
@@ -275,12 +273,12 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
+                                                        <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2kW-s0-74U">
-                                                <rect key="frame" x="39" y="245" width="242.5" height="20"/>
+                                                <rect key="frame" x="39" y="244" width="242.5" height="20"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-Xv-kVQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="65" height="20"/>
@@ -372,7 +370,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-xM-Yj8" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="143" y="286" width="165" height="21"/>
+                                                <rect key="frame" x="143" y="285" width="165" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="FKc-Of-XxP"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="a8y-3Z-5NZ"/>
@@ -389,7 +387,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R3-Ri-Iy8">
-                                                <rect key="frame" x="20" y="319" width="288" height="48.5"/>
+                                                <rect key="frame" x="20" y="318" width="288" height="48.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر و حتى الأحتراف. هذه الدورة ليست مجرد اساسيات فقط..انها تعلمك الكثير</string>
@@ -413,7 +411,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3G-Mm-Wvm" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="387.5" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="386.5" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="AKX-NE-3UI"/>
                                                     <constraint firstAttribute="height" constant="21" id="XYs-87-Z5t"/>
@@ -430,7 +428,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-io-dJ0">
-                                                <rect key="frame" x="20" y="420.5" width="288" height="36.5"/>
+                                                <rect key="frame" x="20" y="419.5" width="288" height="36.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر و حتى الأحتراف">
                                                         <attributes>
@@ -453,7 +451,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCO-y4-JHE" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="477" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="476" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="p3E-LN-Jvt"/>
                                                     <constraint firstAttribute="width" constant="160" id="xd3-6Y-0ji"/>
@@ -470,7 +468,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iq-59-hk6">
-                                                <rect key="frame" x="20" y="510" width="288" height="24.5"/>
+                                                <rect key="frame" x="20" y="509" width="288" height="24.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا.">
                                                         <attributes>
@@ -483,7 +481,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-I8-Ra0">
-                                                <rect key="frame" x="30" y="757" width="224" height="36.5"/>
+                                                <rect key="frame" x="30" y="756" width="224" height="36.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر">
                                                         <attributes>
@@ -506,7 +504,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-v2-6Hu" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="554.5" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="553.5" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="aSw-c7-5ae"/>
                                                     <constraint firstAttribute="height" constant="21" id="zRj-bL-XP0"/>
@@ -523,7 +521,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltP-oW-vZ9" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="146" y="665.5" width="162" height="21"/>
+                                                <rect key="frame" x="146" y="664.5" width="162" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Jfl-k1-GOX"/>
                                                     <constraint firstAttribute="width" constant="162" id="bnq-qc-6nt"/>
@@ -540,7 +538,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UM-nn-4Lf" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="146" y="844.5" width="162" height="21"/>
+                                                <rect key="frame" x="146" y="843.5" width="162" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="162" id="H1m-BR-M5C"/>
                                                     <constraint firstAttribute="height" constant="21" id="K3P-Ph-PJL"/>
@@ -557,7 +555,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-jm-4kc">
-                                                <rect key="frame" x="110" y="706.5" width="198" height="40.5"/>
+                                                <rect key="frame" x="110" y="705.5" width="198" height="40.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-zH-J7A">
                                                         <rect key="frame" x="0.0" y="4" width="144" height="32.5"/>
@@ -675,13 +673,13 @@
                                                 </subviews>
                                             </stackView>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fPR-wY-Ayd">
-                                                <rect key="frame" x="0.0" y="933.5" width="320" height="180"/>
+                                                <rect key="frame" x="0.0" y="932.5" width="320" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="8v6-ZZ-n2H"/>
                                                 </constraints>
                                             </mapView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="p3v-ki-j5n">
-                                                <rect key="frame" x="72.5" y="1143.5" width="175" height="67"/>
+                                                <rect key="frame" x="72.5" y="1142.5" width="175" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-1W-Dch">
                                                         <rect key="frame" x="0.0" y="0.0" width="175" height="15"/>
@@ -744,7 +742,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hby-zs-eQ7" userLabel="trainingLocationStack">
-                                                <rect key="frame" x="113.5" y="885.5" width="194.5" height="33"/>
+                                                <rect key="frame" x="113.5" y="884.5" width="194.5" height="33"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-yf-Kbj">
                                                         <rect key="frame" x="0.0" y="0.0" width="194.5" height="15.5"/>
@@ -778,7 +776,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vg9-rI-L8Q">
-                                                <rect key="frame" x="109" y="809.5" width="103.5" height="15"/>
+                                                <rect key="frame" x="109" y="808.5" width="103.5" height="15"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-eE-SRy">
                                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -815,7 +813,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-tv-AHd" userLabel="trainerStack">
-                                                <rect key="frame" x="67" y="595.5" width="186" height="50"/>
+                                                <rect key="frame" x="67" y="594.5" width="186" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="VuJ-Uk-nvw">
                                                         <rect key="frame" x="0.0" y="5" width="121" height="40"/>
@@ -879,7 +877,6 @@
                                             <constraint firstItem="PRV-H7-01f" firstAttribute="top" secondItem="wXz-XS-K2Z" secondAttribute="bottom" constant="22" id="8be-4I-AYX"/>
                                             <constraint firstAttribute="trailing" secondItem="6c2-KA-a32" secondAttribute="trailing" id="9pQ-ax-Qve"/>
                                             <constraint firstItem="eBT-O8-Lid" firstAttribute="leading" secondItem="NH7-fW-H1n" secondAttribute="leading" id="9qt-2r-GrK"/>
-                                            <constraint firstItem="PRV-H7-01f" firstAttribute="leading" secondItem="NH7-fW-H1n" secondAttribute="leading" constant="40" id="An4-lx-zlC"/>
                                             <constraint firstItem="vCO-y4-JHE" firstAttribute="top" secondItem="GMP-io-dJ0" secondAttribute="bottom" constant="20" id="B5m-3D-msb"/>
                                             <constraint firstAttribute="trailing" secondItem="eBT-O8-Lid" secondAttribute="trailing" id="Cp1-aC-WBj"/>
                                             <constraint firstItem="2kW-s0-74U" firstAttribute="top" secondItem="PRV-H7-01f" secondAttribute="bottom" constant="18" id="Dlo-XG-IHE"/>
@@ -891,6 +888,7 @@
                                             <constraint firstItem="p3v-ki-j5n" firstAttribute="top" secondItem="fPR-wY-Ayd" secondAttribute="bottom" constant="30" id="J41-dk-y8H"/>
                                             <constraint firstItem="nOF-jm-4kc" firstAttribute="top" secondItem="ltP-oW-vZ9" secondAttribute="bottom" constant="20" id="JFH-0i-2qM"/>
                                             <constraint firstItem="ltP-oW-vZ9" firstAttribute="top" secondItem="FIO-tv-AHd" secondAttribute="bottom" constant="20" id="JTw-78-DU2"/>
+                                            <constraint firstItem="PRV-H7-01f" firstAttribute="centerX" secondItem="NH7-fW-H1n" secondAttribute="centerX" id="M1v-g9-qGA"/>
                                             <constraint firstItem="6i0-I8-Ra0" firstAttribute="top" secondItem="nOF-jm-4kc" secondAttribute="bottom" constant="10" id="M9K-bN-c7J"/>
                                             <constraint firstItem="5iq-59-hk6" firstAttribute="top" secondItem="vCO-y4-JHE" secondAttribute="bottom" constant="12" id="O3o-iu-RAD"/>
                                             <constraint firstAttribute="trailing" secondItem="6i0-I8-Ra0" secondAttribute="trailing" constant="66" id="Qb8-Vc-VMu"/>
@@ -901,7 +899,6 @@
                                             <constraint firstAttribute="trailing" secondItem="tJD-xM-Yj8" secondAttribute="trailing" constant="12" id="bav-c4-h38"/>
                                             <constraint firstItem="Vg9-rI-L8Q" firstAttribute="top" secondItem="6i0-I8-Ra0" secondAttribute="bottom" constant="16" id="bva-Mg-a5t"/>
                                             <constraint firstItem="1R3-Ri-Iy8" firstAttribute="top" secondItem="tJD-xM-Yj8" secondAttribute="bottom" constant="12" id="dcS-16-fHi"/>
-                                            <constraint firstAttribute="trailing" secondItem="PRV-H7-01f" secondAttribute="trailing" constant="40" id="gZP-AU-bfp"/>
                                             <constraint firstAttribute="trailing" secondItem="G3G-Mm-Wvm" secondAttribute="trailing" constant="12" id="gth-xC-3zZ"/>
                                             <constraint firstItem="6i0-I8-Ra0" firstAttribute="leading" secondItem="NH7-fW-H1n" secondAttribute="leading" constant="30" id="hnr-sI-PRs"/>
                                             <constraint firstAttribute="trailing" secondItem="fPR-wY-Ayd" secondAttribute="trailing" id="j5J-Qm-BXO"/>
@@ -914,7 +911,7 @@
                                             <constraint firstItem="p3v-ki-j5n" firstAttribute="centerX" secondItem="NH7-fW-H1n" secondAttribute="centerX" id="uBO-3r-u3Z"/>
                                             <constraint firstItem="2kW-s0-74U" firstAttribute="centerX" secondItem="NH7-fW-H1n" secondAttribute="centerX" id="vZA-mk-cz8"/>
                                             <constraint firstItem="7UM-nn-4Lf" firstAttribute="top" secondItem="Vg9-rI-L8Q" secondAttribute="bottom" constant="20" id="veY-O4-xTZ"/>
-                                            <constraint firstAttribute="height" constant="1300" id="wKZ-Ep-67p"/>
+                                            <constraint firstAttribute="height" constant="1250" identifier="containerViewHeight" id="wKZ-Ep-67p"/>
                                             <constraint firstItem="FIO-tv-AHd" firstAttribute="centerX" secondItem="NH7-fW-H1n" secondAttribute="centerX" id="xwD-Ph-PJU"/>
                                             <constraint firstAttribute="trailing" secondItem="hby-zs-eQ7" secondAttribute="trailing" constant="12" id="zOL-G9-nsv"/>
                                         </constraints>
@@ -939,6 +936,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="320" height="1300"/>
+                    <connections>
+                        <outlet property="containerView" destination="NH7-fW-H1n" id="cx1-NB-X6U"/>
+                        <outlet property="containerViewHeight" destination="wKZ-Ep-67p" id="dh1-bk-cq7"/>
+                        <outlet property="courseBGHeight" destination="dS5-h2-uWl" id="hOo-vl-1lN"/>
+                        <outlet property="courseBGImageView" destination="eBT-O8-Lid" id="VyH-uG-3eY"/>
+                        <outlet property="courseCoverView" destination="6c2-KA-a32" id="AGn-n3-kzd"/>
+                        <outlet property="courseCoverViewHeight" destination="T6G-mM-3rc" id="gae-Ju-aOx"/>
+                        <outlet property="lbl_trainingContent" destination="GMP-io-dJ0" id="ur9-T5-Vih"/>
+                        <outlet property="lbl_trainingDescription" destination="1R3-Ri-Iy8" id="ZWJ-LP-dmi"/>
+                        <outlet property="lbl_trainingPre" destination="5iq-59-hk6" id="4ef-13-fwZ"/>
+                        <outlet property="lbl_trainingTitle" destination="9Hl-KX-uBC" id="1Xb-HG-VWJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
