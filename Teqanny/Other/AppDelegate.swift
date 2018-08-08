@@ -17,16 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
         //
-        //UINavigationBar.appearance().barTintColor = UIColor(red: 0.0, green:174.0, blue:213.0, alpha:1.0);
+        // customization of navigation bar
+        //
         
         //
-        UINavigationBar.appearance().barTintColor = UIColor(red: 216.0/255.0, green: 74.0/255.0, blue: 32.0/255.0, alpha: 1.0);
+        UINavigationBar.appearance().barTintColor = UIColor(colorCode: 0x00aed5);
         
         //
         UINavigationBar.appearance().tintColor = UIColor.white
         
         //
-        if let barFont = UIFont(name: "Avenir-Light", size: 24.0)
+        if let barFont = UIFont(name: "29LTBukra-Regular", size: 18.0)
         {
             UINavigationBar.appearance().titleTextAttributes =
                 [NSAttributedStringKey.foregroundColor:UIColor.white, NSAttributedStringKey.font:barFont]
@@ -34,6 +35,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
         //
         UIApplication.shared.statusBarStyle = .lightContent
+        
+        //
+        // customization of tab bar
+        //
+        
+        //
+        UITabBar.appearance().barTintColor = UIColor(red: 236.0/255.0, green: 240.0/255.0, blue: 241.0/255.0, alpha: 1.0);
+        
+        //
+        UITabBar.appearance().tintColor = UIColor(colorCode: 0x00aed5);
         
         //
         return true

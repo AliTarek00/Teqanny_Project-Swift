@@ -1,19 +1,21 @@
 //
-//  ViewController.swift
+//  CoursePageViewController.swift
 //  Teqanny
 //
-//  Created by Essam Mohamed Fahmi on 8/6/18.
+//  Created by Essam Mohamed Fahmi on 8/8/18.
 //  Copyright © 2018 Essam Mohamed Fahmi. All rights reserved.
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController
+class CoursePageViewController: UIViewController, MKMapViewDelegate
 {
     //
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var courseCoverView: UIView!
     @IBOutlet weak var courseBGImageView: UIImageView!
+    @IBOutlet weak var mapView: MKMapView!
     
     //
     @IBOutlet weak var lbl_trainingTitle: UILabel!
@@ -30,7 +32,11 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         //
-        super.viewDidLoad()
+        super.viewDidLoad();
+        
+        //
+        mapView.delegate = self;
+        addLocationOnMap();
     }
     
     //
@@ -40,7 +46,9 @@ class ViewController: UIViewController
         super.viewWillAppear(animated);
         
         //
-        lbl_trainingContent.text = "وقد قام مارك زوكربيرغ بتأسيس فيسبوك بالاشتراك مع كل من داستين موسكوفيتز وكريس هيوز الذين تخصصا في دراسة علوم الحاسب وكانا رفيقي زوكربيرغ في سكن الجامعة عندما كان طالبًا في جامعة هارفارد. كانت عضوية الموقع مقتصرة في بداية الأمر على طلبة جامعة هارفارد، ولكنها امتدت بعد ذلك لتشمل الكليات الأخرى في مدينة بوسطن وجامعة آيفي ليج وجامعة ستانفورد. ثم اتسعت دائرة الموقع لتشمل أي طالب جامعي، ثم طلبة المدارس الثانوية، وأخيرًا أي شخص يبلغ من العمر 13 عامًا فأكثر. يضم الموقع حاليًا أكثر من مليار مستخدم على مستوى العالم.";
+        //lbl_trainingTitle.text = " كانت عضوية الموقع مقتصرة في بداية الأمر على طلبة جامعة هارفارد، ولكنها امتدت بعد ذلك لتشمل الكليات الأخرى في مدينة بوسطن وجامعة آيفي ليج وجامعة ستانفورد.";
+        
+        //lbl_trainingContent.text = "وقد قام مارك زوكربيرغ بتأسيس فيسبوك بالاشتراك مع كل من داستين موسكوفيتز وكريس هيوز الذين تخصصا في دراسة علوم الحاسب وكانا رفيقي زوكربيرغ في سكن الجامعة عندما كان طالبًا في جامعة هارفارد. كانت عضوية الموقع مقتصرة في بداية الأمر على طلبة جامعة هارفارد، ولكنها امتدت بعد ذلك لتشمل الكليات الأخرى في مدينة بوسطن وجامعة آيفي ليج وجامعة ستانفورد. ثم اتسعت دائرة الموقع لتشمل أي طالب جامعي، ثم طلبة المدارس الثانوية، وأخيرًا أي شخص يبلغ من العمر 13 عامًا فأكثر. يضم الموقع حاليًا أكثر من مليار مستخدم على مستوى العالم.";
     }
     
     //
@@ -124,10 +132,80 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //
+    func addLocationOnMap()
+    {
+        // Convert address to coordinate and annotate it on map
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString("address", completionHandler: {
+            placemarks, error in
+            if error != nil
+            {
+                print(error!)
+                return
+            }
+            
+            //
+            if let placemarks = placemarks
+            {
+                // Get the first placemark
+                let placemark = placemarks[0]
+                
+                // Add annotation
+                let annotation = MKPointAnnotation()
+                annotation.title = "Raqameeha"
+                annotation.subtitle = "Digital Agency"
+                
+                //
+                if let location = placemark.location
+                {
+                    //
+                    annotation.coordinate = location.coordinate
+                    
+                    // Display the annotation
+                    self.mapView.showAnnotations([annotation], animated: true)
+                    self.mapView.selectAnnotation(annotation, animated: true)
+                }
+            }
+        })
+    }
 
+    //
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
+    {
+        //
+        let identifier = "MyPin"
+        if annotation.isKind(of: MKUserLocation.self)
+        {
+            return nil
+        }
+        
+        // Reuse the annotation if possible
+        var annotationView:MKPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
+        
+        //
+        if annotationView == nil
+        {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+        }
+        
+        //
+        let leftIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
+        leftIconView.image = UIImage(named: "logo")
+        annotationView?.leftCalloutAccessoryView = leftIconView
+        annotationView?.pinTintColor = UIColor.orange
+        
+        //
+        return annotationView
+    }
     
-    
-    
-
 } // end of class
+
+
+
+
+
+
 
