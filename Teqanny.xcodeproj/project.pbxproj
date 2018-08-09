@@ -11,51 +11,45 @@
 		84020E1821189C88007E16BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84020E1621189C88007E16BF /* Main.storyboard */; };
 		84020E1A21189C88007E16BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84020E1921189C88007E16BF /* Assets.xcassets */; };
 		84020E1D21189C88007E16BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84020E1B21189C88007E16BF /* LaunchScreen.storyboard */; };
-		84020E302118B954007E16BF /* facebook-ads.png in Resources */ = {isa = PBXBuildFile; fileRef = 84020E2E2118B953007E16BF /* facebook-ads.png */; };
-		84020E312118B954007E16BF /* facebook-ads-api-dashboards-reports.png in Resources */ = {isa = PBXBuildFile; fileRef = 84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */; };
 		84020E332118B9D0007E16BF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84020E322118B9D0007E16BF /* FancyButton.swift */; };
 		8461FD34211B960B0032B7A6 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461FD33211B960B0032B7A6 /* DrawingView.swift */; };
 		8461FD39211B98AA0032B7A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461FD38211B98AA0032B7A6 /* MapKit.framework */; };
 		8461FD3B211B99A90032B7A6 /* CoursePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461FD3A211B99A90032B7A6 /* CoursePageViewController.swift */; };
-		8480D1E0211A423600F7F414 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 8480D1DF211A423400F7F414 /* me.png */; };
+		8461FD3D211BB8A90032B7A6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461FD3C211BB8A90032B7A6 /* Course.swift */; };
+		847EACFD211CF4F600D31665 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EACFC211CF4F600D31665 /* Common.swift */; };
 		8480D1E2211A4BF800F7F414 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480D1E1211A4BF800F7F414 /* SourceViewController.swift */; };
-		84ACFD15211B53EC00F5AE21 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACFD14211B53EB00F5AE21 /* Extension.swift */; };
+		84ACFD15211B53EC00F5AE21 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACFD14211B53EB00F5AE21 /* ColorExtension.swift */; };
 		84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C02118E52D00074BDA /* 29ltbukrabold.otf */; };
 		84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */; };
 		84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C22118E53100074BDA /* 29ltbukraregular.otf */; };
 		84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C32118E53200074BDA /* 29ltbukralight.otf */; };
-		84D199AC2119B312007E91D1 /* course-ios-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D199A92119B311007E91D1 /* course-ios-1.png */; };
-		84D199AD2119B312007E91D1 /* course-ios-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D199AA2119B311007E91D1 /* course-ios-2.png */; };
-		84D199AE2119B312007E91D1 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84D199AB2119B312007E91D1 /* bg.jpg */; };
-		84D199B02119CBB8007E91D1 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84D199AF2119CBB5007E91D1 /* profile.jpg */; };
 		84D199B22119CBFB007E91D1 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D199B12119CBFB007E91D1 /* FancyImageView.swift */; };
+		B0B18DAABC70B8A7045116D6 /* Pods_Teqanny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76652000BAA751D475A6E018 /* Pods_Teqanny.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270D01A6B2C857F667D53694 /* Pods-Teqanny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teqanny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teqanny/Pods-Teqanny.debug.xcconfig"; sourceTree = "<group>"; };
+		76652000BAA751D475A6E018 /* Pods_Teqanny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teqanny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84020E0F21189C88007E16BF /* Teqanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teqanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84020E1221189C88007E16BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84020E1721189C88007E16BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84020E1921189C88007E16BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84020E1C21189C88007E16BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84020E1E21189C88007E16BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84020E2E2118B953007E16BF /* facebook-ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-ads.png"; sourceTree = "<group>"; };
-		84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-ads-api-dashboards-reports.png"; sourceTree = "<group>"; };
 		84020E322118B9D0007E16BF /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FancyButton.swift; path = Teqanny/View/FancyButton.swift; sourceTree = SOURCE_ROOT; };
 		8461FD33211B960B0032B7A6 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		8461FD38211B98AA0032B7A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8461FD3A211B99A90032B7A6 /* CoursePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePageViewController.swift; sourceTree = "<group>"; };
-		8480D1DF211A423400F7F414 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		8461FD3C211BB8A90032B7A6 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		847EACFC211CF4F600D31665 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		8480D1E1211A4BF800F7F414 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
-		84ACFD14211B53EB00F5AE21 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		84ACFD14211B53EB00F5AE21 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		84B210C02118E52D00074BDA /* 29ltbukrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabold.otf; sourceTree = "<group>"; };
 		84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukrabolditalic.otf; sourceTree = "<group>"; };
 		84B210C22118E53100074BDA /* 29ltbukraregular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukraregular.otf; sourceTree = "<group>"; };
 		84B210C32118E53200074BDA /* 29ltbukralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukralight.otf; sourceTree = "<group>"; };
-		84D199A92119B311007E91D1 /* course-ios-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course-ios-1.png"; sourceTree = "<group>"; };
-		84D199AA2119B311007E91D1 /* course-ios-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course-ios-2.png"; sourceTree = "<group>"; };
-		84D199AB2119B312007E91D1 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		84D199AF2119CBB5007E91D1 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
 		84D199B12119CBFB007E91D1 /* FancyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
+		9D0217F55836F5D8148E356E /* Pods-Teqanny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teqanny.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teqanny/Pods-Teqanny.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,18 +58,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				8461FD39211B98AA0032B7A6 /* MapKit.framework in Frameworks */,
+				B0B18DAABC70B8A7045116D6 /* Pods_Teqanny.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B10EB0A0FAB5B1731A283AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				270D01A6B2C857F667D53694 /* Pods-Teqanny.debug.xcconfig */,
+				9D0217F55836F5D8148E356E /* Pods-Teqanny.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84020E0621189C88007E16BF = {
 			isa = PBXGroup;
 			children = (
 				84020E1121189C88007E16BF /* Teqanny */,
 				84020E1021189C88007E16BF /* Products */,
 				8461FD35211B98A80032B7A6 /* Frameworks */,
+				2B10EB0A0FAB5B1731A283AB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,13 +95,13 @@
 		84020E1121189C88007E16BF /* Teqanny */ = {
 			isa = PBXGroup;
 			children = (
-				84ACFD16211B53F500F5AE21 /* Extension */,
+				84ACFD16211B53F500F5AE21 /* Utilities */,
 				84020E342118D7CA007E16BF /* Resources */,
 				84020E2C21189E87007E16BF /* Other */,
 				84020E2B21189E77007E16BF /* Storyboard */,
-				84020E2921189E5A007E16BF /* Controller */,
-				84020E2821189E54007E16BF /* View */,
 				84020E2721189E4D007E16BF /* Model */,
+				84020E2821189E54007E16BF /* View */,
+				84020E2921189E5A007E16BF /* Controller */,
 			);
 			path = Teqanny;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 		84020E2721189E4D007E16BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8461FD3C211BB8A90032B7A6 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,13 +159,6 @@
 				84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */,
 				84B210C32118E53200074BDA /* 29ltbukralight.otf */,
 				84B210C22118E53100074BDA /* 29ltbukraregular.otf */,
-				84D199AB2119B312007E91D1 /* bg.jpg */,
-				84D199AF2119CBB5007E91D1 /* profile.jpg */,
-				8480D1DF211A423400F7F414 /* me.png */,
-				84D199A92119B311007E91D1 /* course-ios-1.png */,
-				84D199AA2119B311007E91D1 /* course-ios-2.png */,
-				84020E2F2118B953007E16BF /* facebook-ads-api-dashboards-reports.png */,
-				84020E2E2118B953007E16BF /* facebook-ads.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -168,16 +167,18 @@
 			isa = PBXGroup;
 			children = (
 				8461FD38211B98AA0032B7A6 /* MapKit.framework */,
+				76652000BAA751D475A6E018 /* Pods_Teqanny.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84ACFD16211B53F500F5AE21 /* Extension */ = {
+		84ACFD16211B53F500F5AE21 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				84ACFD14211B53EB00F5AE21 /* Extension.swift */,
+				84ACFD14211B53EB00F5AE21 /* ColorExtension.swift */,
+				847EACFC211CF4F600D31665 /* Common.swift */,
 			);
-			path = Extension;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84020E2121189C88007E16BF /* Build configuration list for PBXNativeTarget "Teqanny" */;
 			buildPhases = (
+				C9844DB616DE842C5402FEBD /* [CP] Check Pods Manifest.lock */,
 				84020E0B21189C88007E16BF /* Sources */,
 				84020E0C21189C88007E16BF /* Frameworks */,
 				84020E0D21189C88007E16BF /* Resources */,
+				CB685882FD287097FA2B3CA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,34 +248,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				84020E1D21189C88007E16BF /* LaunchScreen.storyboard in Resources */,
-				84D199B02119CBB8007E91D1 /* profile.jpg in Resources */,
 				84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */,
-				84D199AC2119B312007E91D1 /* course-ios-1.png in Resources */,
 				84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */,
 				84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */,
-				84020E312118B954007E16BF /* facebook-ads-api-dashboards-reports.png in Resources */,
-				84D199AD2119B312007E91D1 /* course-ios-2.png in Resources */,
 				84020E1A21189C88007E16BF /* Assets.xcassets in Resources */,
 				84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */,
-				84020E302118B954007E16BF /* facebook-ads.png in Resources */,
-				84D199AE2119B312007E91D1 /* bg.jpg in Resources */,
 				84020E1821189C88007E16BF /* Main.storyboard in Resources */,
-				8480D1E0211A423600F7F414 /* me.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9844DB616DE842C5402FEBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teqanny-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB685882FD287097FA2B3CA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Teqanny/Pods-Teqanny-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teqanny/Pods-Teqanny-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84020E0B21189C88007E16BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8461FD3D211BB8A90032B7A6 /* Course.swift in Sources */,
 				8461FD34211B960B0032B7A6 /* DrawingView.swift in Sources */,
 				8480D1E2211A4BF800F7F414 /* SourceViewController.swift in Sources */,
 				84020E332118B9D0007E16BF /* FancyButton.swift in Sources */,
-				84ACFD15211B53EC00F5AE21 /* Extension.swift in Sources */,
+				84ACFD15211B53EC00F5AE21 /* ColorExtension.swift in Sources */,
 				84D199B22119CBFB007E91D1 /* FancyImageView.swift in Sources */,
+				847EACFD211CF4F600D31665 /* Common.swift in Sources */,
 				8461FD3B211B99A90032B7A6 /* CoursePageViewController.swift in Sources */,
 				84020E1321189C88007E16BF /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +446,7 @@
 		};
 		84020E2221189C88007E16BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270D01A6B2C857F667D53694 /* Pods-Teqanny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +462,7 @@
 		};
 		84020E2321189C88007E16BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0217F55836F5D8148E356E /* Pods-Teqanny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

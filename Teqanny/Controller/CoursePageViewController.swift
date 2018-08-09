@@ -8,14 +8,22 @@
 
 import UIKit
 import MapKit
+import Social
 
 class CoursePageViewController: UIViewController, MKMapViewDelegate
 {
     //
+    var myTimer:Timer!
+    
+    //
+    @IBOutlet weak var loveBtn: UIButton!
+    @IBOutlet weak var alertBtn: UIButton!
+    @IBOutlet weak var enrollBtn: FancyButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var courseCoverView: UIView!
     @IBOutlet weak var courseBGImageView: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var shareImageView: UIImageView!
     
     //
     @IBOutlet weak var lbl_trainingTitle: UILabel!
@@ -37,6 +45,15 @@ class CoursePageViewController: UIViewController, MKMapViewDelegate
         //
         mapView.delegate = self;
         addLocationOnMap();
+        
+        // load course data from backend
+        //let url = "https://jsonplaceholder.typicode.com/courses";
+        //getRequest(url);
+        
+        //
+        shareImageView.isUserInteractionEnabled = true
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(share));
+        shareImageView.addGestureRecognizer(tapGestureRecognizer)
     }
     
     //
@@ -137,8 +154,9 @@ class CoursePageViewController: UIViewController, MKMapViewDelegate
     func addLocationOnMap()
     {
         // Convert address to coordinate and annotate it on map
+        let centerAddress = "Raqameyyah Solutions, King Seti, Ash Sheyakhah as Sabeah, Qesm Than Asyut, Assiut Governorate";
         let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString("address", completionHandler: {
+        geoCoder.geocodeAddressString(centerAddress, completionHandler: {
             placemarks, error in
             if error != nil
             {
@@ -154,7 +172,7 @@ class CoursePageViewController: UIViewController, MKMapViewDelegate
                 
                 // Add annotation
                 let annotation = MKPointAnnotation()
-                annotation.title = "Raqameeha"
+                annotation.title = "Raqameyyah Solutions"
                 annotation.subtitle = "Digital Agency"
                 
                 //
@@ -201,7 +219,179 @@ class CoursePageViewController: UIViewController, MKMapViewDelegate
         return annotationView
     }
     
+    //
+    func getRequest(_ url: String)
+    {
+        //
+        let request = URLRequest(url: URL(string: url)!);
+        
+        //
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: NSError?) -> Void in
+          
+            //
+            if let data = data
+            {
+                do
+                {
+                    let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as!
+                        [[String: AnyObject]];
+                    
+                    for data in jsonData
+                    {
+                        // print all courses titles
+                        print(data["title"]!);
+                    }
+                }
+                catch
+                {
+                    print("json error : \(error)");
+                }
+            }
+            
+        } as! (Data?, URLResponse?, Error?) -> Void)
+        
+        //
+        task.resume();
+        
+    } // get request
+    
+    //
+    @objc func share()
+    {
+        //
+        let shareText = "Getting ready for " + "Photoshop Course" + " in #Teqanny 💪"
+        
+        //
+        if let image = UIImage(named: "bg")
+        {
+            let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: [shareText, image], applicationActivities:nil)
+            /*
+            activityViewController.excludedActivityTypes = [.print, .copyToPasteboard, .assignToContact, .saveToCameraRoll, .airDrop]
+            */
+            
+            DispatchQueue.main.async {
+                self.present(activityViewController, animated: true, completion: nil);
+            }
+        }
+    }
+    
+    //
+    @IBAction func enrollBtnClicked(_ sender: Any)
+    {
+        if enrollBtn.titleLabel?.text == "انضم للتدريب"
+        {
+            //
+            enrollBtn.backgroundColor = UIColor(colorCode: 0xdc2126);
+            
+            //
+            if let attributedTitle = enrollBtn.attributedTitle(for: .normal)
+            {
+                let mutableAttributedTitle = NSMutableAttributedString(attributedString: attributedTitle)
+                mutableAttributedTitle.replaceCharacters(in: NSMakeRange(0, mutableAttributedTitle.length), with: "إلغاء الاشتراك")
+                enrollBtn.setAttributedTitle(mutableAttributedTitle, for: .normal)
+            }
+            
+            // turn on the alert
+            myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(turnOnAlert), userInfo: nil, repeats: true)
+            
+            // going to enroll
+            //
+        }
+        else
+        {
+            //
+            enrollBtn.backgroundColor = UIColor(colorCode: 0x00aed5);
+            
+            //
+            if let attributedTitle = enrollBtn.attributedTitle(for: .normal)
+            {
+                let mutableAttributedTitle = NSMutableAttributedString(attributedString: attributedTitle)
+                mutableAttributedTitle.replaceCharacters(in: NSMakeRange(0, mutableAttributedTitle.length), with: "انضم للتدريب")
+                enrollBtn.setAttributedTitle(mutableAttributedTitle, for: .normal)
+            }
+            
+            //
+            self.alertBtn.setImage(UIImage(named: "course-page-unpaid_1"), for: .normal)
+            
+            // stop alert
+            myTimer.invalidate()
+            
+            // cancel going
+            
+        }
+        
+    } // end of function : enroll
+    
+    //
+    @objc func turnOnAlert()
+    {
+        switchImage();
+        
+    } // alert
+    
+    //
+    func switchImage()
+    {
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
+            
+            if self.alertBtn.currentImage == UIImage(named: "course-page-unpaid_1")
+            {
+                // switch image
+                self.alertBtn.setImage(UIImage(named: "course-page-paid"), for: .normal)
+            }
+            else
+            {
+                // switch image
+                self.alertBtn.setImage(UIImage(named: "course-page-unpaid_1"), for: .normal)
+            }
+            
+        }, completion: nil)
+    }
+    
+    //
+    @IBAction func loveBtnClicked(_ sender: Any)
+    {
+        if self.loveBtn.currentImage == UIImage(named: "course-page-unliked_1")
+        {
+            // switch image
+            self.loveBtn.setImage(UIImage(named: "course-page-liked"), for: .normal)
+        }
+        else
+        {
+            // switch image
+            self.loveBtn.setImage(UIImage(named: "course-page-unliked_1"), for: .normal)
+        }
+    }
+    
+    //
+    @IBAction func alertBtnClicked(_ sender: Any)
+    {
+        if enrollBtn.titleLabel?.text != "انضم للتدريب"
+        {
+            //
+            self.alertBtn.setImage(UIImage(named: "course-page-unpaid_1"), for: .normal)
+            
+            //
+            myTimer.invalidate()
+            
+            // show message
+            let message = "شكرا للاشتراك. من فضلك قم بزيارة مركز التدريب لتأكيد الاشتراك.";
+            Common.createAlertController(title: "تأكيد الاشتراك", message: message, viewController: self)
+        }
+    }
+    
 } // end of class
+
+
+
+
+
+
+
+
+
+
+
 
 
 

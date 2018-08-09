@@ -72,16 +72,16 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CoursePageViewController" customModule="Teqanny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJ3-QC-T86">
-                                <rect key="frame" x="0.0" y="64" width="320" height="1187"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="1287"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NH7-fW-H1n" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1250"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-O8-Lid">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-O8-Lid">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" identifier="courseBGHeight" id="dS5-h2-uWl"/>
@@ -91,7 +91,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-KX-uBC">
-                                                        <rect key="frame" x="40" y="18" width="268" height="34"/>
+                                                        <rect key="frame" x="40" y="18" width="268" height="40"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="أساسيات الاعلانات الممولة على فيسبوك وإنستجرام">
                                                                 <attributes>
@@ -104,7 +104,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWp-Tf-o0o">
-                                                        <rect key="frame" x="70" y="59" width="238" height="21"/>
+                                                        <rect key="frame" x="70" y="65" width="238" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="5th-9P-z1g"/>
                                                         </constraints>
@@ -120,7 +120,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-41-RTc" userLabel="ratingStack">
-                                                        <rect key="frame" x="148" y="92" width="160" height="28"/>
+                                                        <rect key="frame" x="148" y="98" width="160" height="28"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btr-a7-mGU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -200,7 +200,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-XS-K2Z">
-                                                        <rect key="frame" x="12" y="134" width="66" height="28"/>
+                                                        <rect key="frame" x="12" y="140" width="66" height="28"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo4-cA-ept">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -208,7 +208,7 @@
                                                                     <constraint firstAttribute="width" constant="28" id="NpC-eL-2Yd"/>
                                                                     <constraint firstAttribute="height" constant="28" id="WH8-e3-9WT"/>
                                                                 </constraints>
-                                                                <state key="normal" image="course-page-unpaid">
+                                                                <state key="normal" image="course-page-unpaid_1">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -216,6 +216,9 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="alertBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUS-tO-4xr"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvN-az-lJG">
                                                                 <rect key="frame" x="38" y="0.0" width="28" height="28"/>
@@ -223,7 +226,7 @@
                                                                     <constraint firstAttribute="height" constant="28" id="a7V-DM-2ay"/>
                                                                     <constraint firstAttribute="width" constant="28" id="l2C-Qm-y5e"/>
                                                                 </constraints>
-                                                                <state key="normal" image="course-page-unliked">
+                                                                <state key="normal" image="course-page-unliked_1">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -231,11 +234,14 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="loveBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90j-Lk-RjS"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rag-4f-9Dg">
-                                                        <rect key="frame" x="94" y="134" width="214" height="28"/>
+                                                        <rect key="frame" x="94" y="140" width="214" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="MGY-J8-1RB"/>
                                                             <constraint firstAttribute="width" constant="214" id="jzK-ah-rVB"/>
@@ -269,8 +275,15 @@
                                                     <constraint firstItem="e3V-41-RTc" firstAttribute="top" secondItem="uWp-Tf-o0o" secondAttribute="bottom" constant="12" id="rFH-Ei-rjq"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1da-Xd-tc7" userLabel="lineView">
+                                                <rect key="frame" x="0.0" y="203" width="320" height="2"/>
+                                                <color key="backgroundColor" red="0.93725490196078431" green="0.78431372549019607" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="e1j-9q-S9b"/>
+                                                </constraints>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-H7-01f" customClass="FancyButton" customModule="Teqanny" customModuleProvider="target">
-                                                <rect key="frame" x="60" y="184" width="200" height="42"/>
+                                                <rect key="frame" x="60" y="190" width="200" height="42"/>
                                                 <color key="backgroundColor" red="0.0" green="0.68235294117647061" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="O6Y-gt-vuv"/>
@@ -292,9 +305,12 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="enrollBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10I-dQ-hSX"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2kW-s0-74U">
-                                                <rect key="frame" x="39" y="244" width="242.5" height="20"/>
+                                                <rect key="frame" x="39" y="250" width="242.5" height="20"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-Xv-kVQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="65" height="20"/>
@@ -386,13 +402,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-xM-Yj8" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="143" y="285" width="165" height="21"/>
+                                                <rect key="frame" x="143" y="291" width="165" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="FKc-Of-XxP"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="a8y-3Z-5NZ"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="وصف الدورة التدربية ">
+                                                    <fragment content="• وصف الدورة التدربية ">
                                                         <attributes>
                                                             <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="15" name="29LTBukra-Bold"/>
@@ -403,7 +419,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R3-Ri-Iy8">
-                                                <rect key="frame" x="20" y="318" width="288" height="48.5"/>
+                                                <rect key="frame" x="20" y="324" width="288" height="42"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر و حتى الأحتراف. هذه الدورة ليست مجرد اساسيات فقط..انها تعلمك الكثير</string>
@@ -427,13 +443,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3G-Mm-Wvm" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="386.5" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="386" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="AKX-NE-3UI"/>
                                                     <constraint firstAttribute="height" constant="21" id="XYs-87-Z5t"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="محتوى التدريب">
+                                                    <fragment content="• محتوى التدريب">
                                                         <attributes>
                                                             <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="15" name="29LTBukra-Bold"/>
@@ -444,7 +460,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-io-dJ0">
-                                                <rect key="frame" x="20" y="419.5" width="288" height="36.5"/>
+                                                <rect key="frame" x="20" y="419" width="288" height="28"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر و حتى الأحتراف">
                                                         <attributes>
@@ -467,13 +483,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCO-y4-JHE" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="476" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="467" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="p3E-LN-Jvt"/>
                                                     <constraint firstAttribute="width" constant="160" id="xd3-6Y-0ji"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="متطلبات التدريب">
+                                                    <fragment content="• متطلبات التدريب">
                                                         <attributes>
                                                             <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="15" name="29LTBukra-Bold"/>
@@ -484,7 +500,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iq-59-hk6">
-                                                <rect key="frame" x="20" y="509" width="288" height="24.5"/>
+                                                <rect key="frame" x="20" y="500" width="288" height="28"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا.">
                                                         <attributes>
@@ -497,7 +513,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-I8-Ra0">
-                                                <rect key="frame" x="30" y="756" width="224" height="36.5"/>
+                                                <rect key="frame" x="30" y="750.5" width="224" height="42"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر">
                                                         <attributes>
@@ -520,13 +536,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-v2-6Hu" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="553.5" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="548" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="aSw-c7-5ae"/>
                                                     <constraint firstAttribute="height" constant="21" id="zRj-bL-XP0"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="المحاضر / المدرب">
+                                                    <fragment content="• المحاضر / المدرب">
                                                         <attributes>
                                                             <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="15" name="29LTBukra-Bold"/>
@@ -537,13 +553,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltP-oW-vZ9" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="146" y="664.5" width="162" height="21"/>
+                                                <rect key="frame" x="146" y="659" width="162" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Jfl-k1-GOX"/>
                                                     <constraint firstAttribute="width" constant="162" id="bnq-qc-6nt"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="الأراء والتقيمات">
+                                                    <fragment content="• الأراء والتقيمات">
                                                         <attributes>
                                                             <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="15" name="29LTBukra-Bold"/>
@@ -560,7 +576,7 @@
                                                     <constraint firstAttribute="height" constant="21" id="K3P-Ph-PJL"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="موقع التدريب">
+                                                    <fragment content="• موقع التدريب">
                                                         <attributes>
                                                             <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="15" name="29LTBukra-Bold"/>
@@ -571,13 +587,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-jm-4kc">
-                                                <rect key="frame" x="110" y="705.5" width="198" height="40.5"/>
+                                                <rect key="frame" x="128.5" y="700" width="179.5" height="40.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-zH-J7A">
-                                                        <rect key="frame" x="0.0" y="4" width="144" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="4" width="125.5" height="32.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwv-j1-tmj" userLabel="• وصف الدورة التدربية">
-                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="12.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="12.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="essam mohamed fahmi">
                                                                         <attributes>
@@ -590,7 +606,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-MB-L2i">
-                                                                <rect key="frame" x="61" y="17.5" width="83" height="15"/>
+                                                                <rect key="frame" x="42.5" y="17.5" width="83" height="15"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Rx-DLC">
                                                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -674,8 +690,8 @@
                                                             <constraint firstAttribute="height" constant="32.5" id="yJz-Gi-VST"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me.png" translatesAutoresizingMaskIntoConstraints="NO" id="f8K-dD-iJX" customClass="FancyImageView" customModule="Teqanny" customModuleProvider="target">
-                                                        <rect key="frame" x="158" y="0.0" width="40" height="40.5"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="f8K-dD-iJX" customClass="FancyImageView" customModule="Teqanny" customModuleProvider="target">
+                                                        <rect key="frame" x="139.5" y="0.0" width="40" height="40.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="AO6-ZG-AdU"/>
                                                             <constraint firstAttribute="width" constant="40" id="Wg6-2o-m1u"/>
@@ -683,6 +699,12 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
@@ -715,34 +737,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FTC-sp-J3J">
-                                                        <rect key="frame" x="17.5" y="27" width="140" height="40"/>
+                                                        <rect key="frame" x="67.5" y="27" width="40" height="40"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course-page-facebook" translatesAutoresizingMaskIntoConstraints="NO" id="XAr-bc-1zZ">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course-page-share" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-1D-x4b">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="40" id="LAs-uF-Rey"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="rhS-fh-D7A"/>
-                                                                </constraints>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="25"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course-page-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="3uI-HF-iGp">
-                                                                <rect key="frame" x="50" y="0.0" width="40" height="40"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="40" id="9Gm-4y-M21"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="Yzg-Hr-3qh"/>
-                                                                </constraints>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="25"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course-page-linkedin" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-1D-x4b">
-                                                                <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Ehe-bw-lit"/>
                                                                     <constraint firstAttribute="width" constant="40" id="qfA-TQ-MGm"/>
@@ -758,10 +756,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hby-zs-eQ7" userLabel="trainingLocationStack">
-                                                <rect key="frame" x="113.5" y="884.5" width="194.5" height="33"/>
+                                                <rect key="frame" x="138.5" y="884.5" width="169.5" height="33"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-yf-Kbj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="15.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-yf-Kbj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="16.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Raqameeha Digital Agency">
                                                                 <attributes>
@@ -773,8 +771,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-Jf-8Zl">
-                                                        <rect key="frame" x="74.5" y="20.5" width="120" height="12.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-Jf-8Zl">
+                                                        <rect key="frame" x="80" y="21.5" width="89.5" height="11.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="أسيوط - شارع سيتي">
                                                                 <attributes>
@@ -829,13 +827,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-tv-AHd" userLabel="trainerStack">
-                                                <rect key="frame" x="67" y="594.5" width="186" height="50"/>
+                                                <rect key="frame" x="83.5" y="589" width="153" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="VuJ-Uk-nvw">
-                                                        <rect key="frame" x="0.0" y="5" width="121" height="40"/>
+                                                        <rect key="frame" x="0.0" y="5" width="88" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urI-Lv-gwx" userLabel="• وصف الدورة التدربية">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="27.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="88" height="26"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="م. مصطفى عثمان">
                                                                         <attributes>
@@ -848,7 +846,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYx-w3-bf5">
-                                                                <rect key="frame" x="12.5" y="27.5" width="108.5" height="12.5"/>
+                                                                <rect key="frame" x="10.5" y="26" width="77.5" height="14"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="مدرب تسويق رقمي">
                                                                         <attributes>
@@ -865,8 +863,8 @@
                                                             <constraint firstAttribute="height" constant="40" id="sOt-aW-V8Y"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YPs-X7-IlV" customClass="FancyImageView" customModule="Teqanny" customModuleProvider="target">
-                                                        <rect key="frame" x="136" y="0.0" width="50" height="50"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="YPs-X7-IlV" customClass="FancyImageView" customModule="Teqanny" customModuleProvider="target">
+                                                        <rect key="frame" x="103" y="0.0" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="5z0-sY-hlD"/>
                                                             <constraint firstAttribute="width" constant="50" id="iE5-Sd-Rdj"/>
@@ -874,6 +872,12 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
@@ -915,6 +919,8 @@
                                             <constraint firstAttribute="trailing" secondItem="tJD-xM-Yj8" secondAttribute="trailing" constant="12" id="bav-c4-h38"/>
                                             <constraint firstItem="Vg9-rI-L8Q" firstAttribute="top" secondItem="6i0-I8-Ra0" secondAttribute="bottom" constant="16" id="bva-Mg-a5t"/>
                                             <constraint firstItem="1R3-Ri-Iy8" firstAttribute="top" secondItem="tJD-xM-Yj8" secondAttribute="bottom" constant="12" id="dcS-16-fHi"/>
+                                            <constraint firstItem="1da-Xd-tc7" firstAttribute="top" secondItem="wXz-XS-K2Z" secondAttribute="bottom" constant="35" id="dgh-rP-zwA"/>
+                                            <constraint firstAttribute="trailing" secondItem="1da-Xd-tc7" secondAttribute="trailing" id="fzZ-GF-XJo"/>
                                             <constraint firstAttribute="trailing" secondItem="G3G-Mm-Wvm" secondAttribute="trailing" constant="12" id="gth-xC-3zZ"/>
                                             <constraint firstItem="6i0-I8-Ra0" firstAttribute="leading" secondItem="NH7-fW-H1n" secondAttribute="leading" constant="30" id="hnr-sI-PRs"/>
                                             <constraint firstAttribute="trailing" secondItem="fPR-wY-Ayd" secondAttribute="trailing" id="j5J-Qm-BXO"/>
@@ -925,6 +931,7 @@
                                             <constraint firstAttribute="trailing" secondItem="vCO-y4-JHE" secondAttribute="trailing" constant="12" id="t6f-ie-Wrl"/>
                                             <constraint firstAttribute="trailing" secondItem="nOF-jm-4kc" secondAttribute="trailing" constant="12" id="tjO-Bu-whY"/>
                                             <constraint firstItem="p3v-ki-j5n" firstAttribute="centerX" secondItem="NH7-fW-H1n" secondAttribute="centerX" id="uBO-3r-u3Z"/>
+                                            <constraint firstItem="1da-Xd-tc7" firstAttribute="leading" secondItem="NH7-fW-H1n" secondAttribute="leading" id="uLx-fy-Lmq"/>
                                             <constraint firstItem="2kW-s0-74U" firstAttribute="centerX" secondItem="NH7-fW-H1n" secondAttribute="centerX" id="vZA-mk-cz8"/>
                                             <constraint firstItem="7UM-nn-4Lf" firstAttribute="top" secondItem="Vg9-rI-L8Q" secondAttribute="bottom" constant="20" id="veY-O4-xTZ"/>
                                             <constraint firstAttribute="height" constant="1250" identifier="containerViewHeight" id="wKZ-Ep-67p"/>
@@ -951,24 +958,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <size key="freeformSize" width="320" height="1300"/>
+                    <size key="freeformSize" width="320" height="1400"/>
                     <connections>
+                        <outlet property="alertBtn" destination="Eo4-cA-ept" id="VdG-Fx-KGb"/>
                         <outlet property="containerView" destination="NH7-fW-H1n" id="cx1-NB-X6U"/>
                         <outlet property="containerViewHeight" destination="wKZ-Ep-67p" id="dh1-bk-cq7"/>
                         <outlet property="courseBGHeight" destination="dS5-h2-uWl" id="hOo-vl-1lN"/>
                         <outlet property="courseBGImageView" destination="eBT-O8-Lid" id="VyH-uG-3eY"/>
                         <outlet property="courseCoverView" destination="6c2-KA-a32" id="AGn-n3-kzd"/>
                         <outlet property="courseCoverViewHeight" destination="T6G-mM-3rc" id="gae-Ju-aOx"/>
+                        <outlet property="enrollBtn" destination="PRV-H7-01f" id="NkD-iH-Aif"/>
                         <outlet property="lbl_trainingContent" destination="GMP-io-dJ0" id="ur9-T5-Vih"/>
                         <outlet property="lbl_trainingDescription" destination="1R3-Ri-Iy8" id="ZWJ-LP-dmi"/>
                         <outlet property="lbl_trainingPre" destination="5iq-59-hk6" id="4ef-13-fwZ"/>
                         <outlet property="lbl_trainingTitle" destination="9Hl-KX-uBC" id="1Xb-HG-VWJ"/>
+                        <outlet property="loveBtn" destination="ZvN-az-lJG" id="f3V-b8-jZz"/>
                         <outlet property="mapView" destination="fPR-wY-Ayd" id="son-Ha-fIe"/>
+                        <outlet property="shareImageView" destination="3IX-1D-x4b" id="0iq-qI-vRP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2565" y="354"/>
+            <point key="canvasLocation" x="2565" y="353.87323943661971"/>
         </scene>
         <!--المزيد-->
         <scene sceneID="KTy-M2-jdq">
@@ -986,11 +997,11 @@
             </objects>
             <point key="canvasLocation" x="-458" y="1159"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Favorite-->
         <scene sceneID="9dP-Q6-6sr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9pb-LV-6n1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Vun-MX-l8P"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="favorite" id="Vun-MX-l8P"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0wB-zD-856">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1011,6 +1022,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pTk-lj-qGM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eoa-cw-xT7">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -1025,11 +1037,11 @@
             </objects>
             <point key="canvasLocation" x="-3017" y="354"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="Mj2-nh-Xex">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Diz-il-lOD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="kYV-cN-P8a"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="discover" id="kYV-cN-P8a"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="thr-pw-xpx">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1060,11 +1072,11 @@
             </objects>
             <point key="canvasLocation" x="-3876" y="1158"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--About-->
         <scene sceneID="uYA-n3-h1a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X1j-HX-jtd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="X4x-WA-JLb"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="X4x-WA-JLb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Enh-ZE-xPz">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -1100,19 +1112,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg.jpg" width="694" height="390"/>
-        <image name="course-page-facebook" width="36" height="36"/>
+        <image name="about" width="23" height="22"/>
+        <image name="bg" width="694" height="390"/>
         <image name="course-page-level" width="34" height="34"/>
-        <image name="course-page-linkedin" width="36" height="36"/>
         <image name="course-page-more" width="14" height="8"/>
         <image name="course-page-price" width="34" height="34"/>
         <image name="course-page-reviewed" width="43" height="41"/>
+        <image name="course-page-share" width="50" height="50"/>
         <image name="course-page-time" width="34" height="34"/>
-        <image name="course-page-twitter" width="36" height="36"/>
-        <image name="course-page-unliked" width="39" height="35"/>
-        <image name="course-page-unpaid" width="37" height="37"/>
+        <image name="course-page-unliked_1" width="39" height="35"/>
+        <image name="course-page-unpaid_1" width="37" height="37"/>
         <image name="course-page-unreviewed_1" width="42" height="41"/>
-        <image name="me.png" width="888" height="890"/>
-        <image name="profile.jpg" width="640" height="640"/>
+        <image name="discover" width="25" height="19"/>
+        <image name="favorite" width="17" height="25"/>
+        <image name="me" width="888" height="890"/>
+        <image name="profile" width="640" height="640"/>
     </resources>
 </document>
