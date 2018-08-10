@@ -91,7 +91,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-KX-uBC">
-                                                        <rect key="frame" x="40" y="18" width="268" height="40"/>
+                                                        <rect key="frame" x="40" y="18" width="268" height="34"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="أساسيات الاعلانات الممولة على فيسبوك وإنستجرام">
                                                                 <attributes>
@@ -104,7 +104,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWp-Tf-o0o">
-                                                        <rect key="frame" x="70" y="65" width="238" height="21"/>
+                                                        <rect key="frame" x="70" y="59" width="238" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="5th-9P-z1g"/>
                                                         </constraints>
@@ -120,7 +120,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-41-RTc" userLabel="ratingStack">
-                                                        <rect key="frame" x="148" y="98" width="160" height="28"/>
+                                                        <rect key="frame" x="148" y="92" width="160" height="28"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btr-a7-mGU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -136,6 +136,9 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="pSK-Z1-Ofn" kind="presentation" id="o5v-pc-S7Y"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ul-jA-n7s">
                                                                 <rect key="frame" x="33" y="0.0" width="28" height="28"/>
@@ -151,6 +154,9 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="pSK-Z1-Ofn" kind="presentation" id="Tjh-Wx-3Mj"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-Em-ONg">
                                                                 <rect key="frame" x="66" y="0.0" width="28" height="28"/>
@@ -166,6 +172,9 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="pSK-Z1-Ofn" kind="presentation" id="LfV-St-P4s"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-PB-wR3">
                                                                 <rect key="frame" x="99" y="0.0" width="28" height="28"/>
@@ -181,6 +190,9 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="pSK-Z1-Ofn" kind="presentation" id="o5T-j8-Mfx"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrg-6W-UBq">
                                                                 <rect key="frame" x="132" y="0.0" width="28" height="28"/>
@@ -196,11 +208,14 @@
                                                                         <real key="value" value="4"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="pSK-Z1-Ofn" kind="presentation" id="MV6-v1-5e2"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-XS-K2Z">
-                                                        <rect key="frame" x="12" y="140" width="66" height="28"/>
+                                                        <rect key="frame" x="12" y="134" width="66" height="28"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo4-cA-ept">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -241,7 +256,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rag-4f-9Dg">
-                                                        <rect key="frame" x="94" y="140" width="214" height="28"/>
+                                                        <rect key="frame" x="94" y="134" width="214" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="MGY-J8-1RB"/>
                                                             <constraint firstAttribute="width" constant="214" id="jzK-ah-rVB"/>
@@ -276,14 +291,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1da-Xd-tc7" userLabel="lineView">
-                                                <rect key="frame" x="0.0" y="203" width="320" height="2"/>
+                                                <rect key="frame" x="0.0" y="197" width="320" height="2"/>
                                                 <color key="backgroundColor" red="0.93725490196078431" green="0.78431372549019607" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="e1j-9q-S9b"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-H7-01f" customClass="FancyButton" customModule="Teqanny" customModuleProvider="target">
-                                                <rect key="frame" x="60" y="190" width="200" height="42"/>
+                                                <rect key="frame" x="60" y="184" width="200" height="42"/>
                                                 <color key="backgroundColor" red="0.0" green="0.68235294117647061" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="O6Y-gt-vuv"/>
@@ -310,7 +325,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2kW-s0-74U">
-                                                <rect key="frame" x="39" y="250" width="242.5" height="20"/>
+                                                <rect key="frame" x="39" y="244" width="242.5" height="20"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-Xv-kVQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="65" height="20"/>
@@ -402,7 +417,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-xM-Yj8" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="143" y="291" width="165" height="21"/>
+                                                <rect key="frame" x="143" y="285" width="165" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="FKc-Of-XxP"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="a8y-3Z-5NZ"/>
@@ -419,7 +434,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R3-Ri-Iy8">
-                                                <rect key="frame" x="20" y="324" width="288" height="42"/>
+                                                <rect key="frame" x="20" y="318" width="288" height="48.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر و حتى الأحتراف. هذه الدورة ليست مجرد اساسيات فقط..انها تعلمك الكثير</string>
@@ -443,7 +458,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3G-Mm-Wvm" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="386" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="386.5" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="AKX-NE-3UI"/>
                                                     <constraint firstAttribute="height" constant="21" id="XYs-87-Z5t"/>
@@ -460,7 +475,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-io-dJ0">
-                                                <rect key="frame" x="20" y="419" width="288" height="28"/>
+                                                <rect key="frame" x="20" y="419.5" width="288" height="36.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر و حتى الأحتراف">
                                                         <attributes>
@@ -483,7 +498,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCO-y4-JHE" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="467" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="476" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="p3E-LN-Jvt"/>
                                                     <constraint firstAttribute="width" constant="160" id="xd3-6Y-0ji"/>
@@ -500,7 +515,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iq-59-hk6">
-                                                <rect key="frame" x="20" y="500" width="288" height="28"/>
+                                                <rect key="frame" x="20" y="509" width="288" height="24.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا.">
                                                         <attributes>
@@ -513,7 +528,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-I8-Ra0">
-                                                <rect key="frame" x="30" y="750.5" width="224" height="42"/>
+                                                <rect key="frame" x="30" y="756" width="224" height="36.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="هذه الدورة لكل شخص يريد عمل فيدوهات تعليمية احترافية بأستخدام برنامج كامتيجيا 9 . سنبدأ معك من الصفر">
                                                         <attributes>
@@ -536,7 +551,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-v2-6Hu" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="148" y="548" width="160" height="21"/>
+                                                <rect key="frame" x="148" y="553.5" width="160" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="aSw-c7-5ae"/>
                                                     <constraint firstAttribute="height" constant="21" id="zRj-bL-XP0"/>
@@ -553,7 +568,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltP-oW-vZ9" userLabel="• وصف الدورة التدربية">
-                                                <rect key="frame" x="146" y="659" width="162" height="21"/>
+                                                <rect key="frame" x="146" y="664.5" width="162" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Jfl-k1-GOX"/>
                                                     <constraint firstAttribute="width" constant="162" id="bnq-qc-6nt"/>
@@ -587,13 +602,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-jm-4kc">
-                                                <rect key="frame" x="128.5" y="700" width="179.5" height="40.5"/>
+                                                <rect key="frame" x="110" y="705.5" width="198" height="40.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-zH-J7A">
-                                                        <rect key="frame" x="0.0" y="4" width="125.5" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="4" width="144" height="32.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwv-j1-tmj" userLabel="• وصف الدورة التدربية">
-                                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="12.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="12.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="essam mohamed fahmi">
                                                                         <attributes>
@@ -606,7 +621,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-MB-L2i">
-                                                                <rect key="frame" x="42.5" y="17.5" width="83" height="15"/>
+                                                                <rect key="frame" x="61" y="17.5" width="83" height="15"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Rx-DLC">
                                                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -691,7 +706,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="f8K-dD-iJX" customClass="FancyImageView" customModule="Teqanny" customModuleProvider="target">
-                                                        <rect key="frame" x="139.5" y="0.0" width="40" height="40.5"/>
+                                                        <rect key="frame" x="158" y="0.0" width="40" height="40.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="AO6-ZG-AdU"/>
                                                             <constraint firstAttribute="width" constant="40" id="Wg6-2o-m1u"/>
@@ -756,10 +771,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hby-zs-eQ7" userLabel="trainingLocationStack">
-                                                <rect key="frame" x="138.5" y="884.5" width="169.5" height="33"/>
+                                                <rect key="frame" x="113.5" y="884.5" width="194.5" height="33"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-yf-Kbj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="16.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-yf-Kbj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="15.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Raqameeha Digital Agency">
                                                                 <attributes>
@@ -771,8 +786,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-Jf-8Zl">
-                                                        <rect key="frame" x="80" y="21.5" width="89.5" height="11.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-Jf-8Zl">
+                                                        <rect key="frame" x="74.5" y="20.5" width="120" height="12.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="أسيوط - شارع سيتي">
                                                                 <attributes>
@@ -827,13 +842,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-tv-AHd" userLabel="trainerStack">
-                                                <rect key="frame" x="83.5" y="589" width="153" height="50"/>
+                                                <rect key="frame" x="67" y="594.5" width="186" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="VuJ-Uk-nvw">
-                                                        <rect key="frame" x="0.0" y="5" width="88" height="40"/>
+                                                        <rect key="frame" x="0.0" y="5" width="121" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urI-Lv-gwx" userLabel="• وصف الدورة التدربية">
-                                                                <rect key="frame" x="0.0" y="0.0" width="88" height="26"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="27.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="م. مصطفى عثمان">
                                                                         <attributes>
@@ -846,7 +861,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYx-w3-bf5">
-                                                                <rect key="frame" x="10.5" y="26" width="77.5" height="14"/>
+                                                                <rect key="frame" x="12.5" y="27.5" width="108.5" height="12.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="مدرب تسويق رقمي">
                                                                         <attributes>
@@ -864,7 +879,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="YPs-X7-IlV" customClass="FancyImageView" customModule="Teqanny" customModuleProvider="target">
-                                                        <rect key="frame" x="103" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="136" y="0.0" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="5z0-sY-hlD"/>
                                                             <constraint firstAttribute="width" constant="50" id="iE5-Sd-Rdj"/>
@@ -980,6 +995,241 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2565" y="353.87323943661971"/>
+        </scene>
+        <!--Rating Page View Controller-->
+        <scene sceneID="eTU-9n-UYW">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="pSK-Z1-Ofn" customClass="RatingPageViewController" customModule="Teqanny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J2g-sr-NTw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEc-9k-74e" customClass="FancyView" customModule="Teqanny" customModuleProvider="target">
+                                <rect key="frame" x="13" y="90" width="295" height="285"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxx-xs-eLO">
+                                        <rect key="frame" x="19" y="19" width="257" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="Hmn-ZZ-oMV"/>
+                                            <constraint firstAttribute="width" constant="257" id="xWS-xs-TSW"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="اكتب رأيك و تقييمك للدوره التدريبية">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.050980392156862744" green="0.40784313725490196" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="13" name="29LTBukra-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Uf-fX-a2m" customClass="FancyTextView" customModule="Teqanny" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="105" width="256" height="109"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="109" id="nxd-vt-dCd"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">سنقوم بعمل 5 تسجلات حقيقية وفي كل تسجيل نعلمك امور جديده لتعديل الفيديو و جعله فيديو رائع يحتوي على اشكال و رسومات و انيماشن بالاضافة للكثير من الامور الاخرى الرائعة</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.68235294120000001" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="13" name="29LTBukra-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mKd-UT-5Wo">
+                                        <rect key="frame" x="20" y="230" width="256" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3L-mt-hwV" customClass="FancyButton" customModule="Teqanny" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="35"/>
+                                                <color key="backgroundColor" red="0.86274509803921573" green="0.12941176470588234" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="ehx-xX-xJ5"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="الغاء">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="15" name="29LTBukra-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelBtnClicked:" destination="pSK-Z1-Ofn" eventType="touchUpInside" id="XF1-Tf-RCC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39i-9W-E0m" customClass="FancyButton" customModule="Teqanny" customModuleProvider="target">
+                                                <rect key="frame" x="133" y="0.0" width="123" height="35"/>
+                                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="X8y-Sv-W7z"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="ارسال   ">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="15" name="29LTBukra-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="aM3-6J-oE7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vY8-A4-uzI" userLabel="ratingStack">
+                                        <rect key="frame" x="116" y="57" width="160" height="28"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ua-Hq-QB8">
+                                                <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="28" id="FsE-i6-KQ2"/>
+                                                    <constraint firstAttribute="height" constant="28" id="nLy-0W-qfv"/>
+                                                </constraints>
+                                                <state key="normal" image="course-page-unreviewed_1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCX-Z1-53R">
+                                                <rect key="frame" x="33" y="0.0" width="28" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="Lgf-fA-M8r"/>
+                                                    <constraint firstAttribute="width" constant="28" id="luS-tq-aZO"/>
+                                                </constraints>
+                                                <state key="normal" image="course-page-reviewed">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XD-ae-1Sv">
+                                                <rect key="frame" x="66" y="0.0" width="28" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="4nh-iJ-duz"/>
+                                                    <constraint firstAttribute="width" constant="28" id="grg-b8-bih"/>
+                                                </constraints>
+                                                <state key="normal" image="course-page-reviewed">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMM-z4-FXB">
+                                                <rect key="frame" x="99" y="0.0" width="28" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="NBd-KF-rcY"/>
+                                                    <constraint firstAttribute="width" constant="28" id="iFi-9n-5Zf"/>
+                                                </constraints>
+                                                <state key="normal" image="course-page-reviewed">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKa-n8-k29">
+                                                <rect key="frame" x="132" y="0.0" width="28" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="28" id="7Bt-Lo-qwU"/>
+                                                    <constraint firstAttribute="height" constant="28" id="cQQ-9b-uTK"/>
+                                                </constraints>
+                                                <state key="normal" image="course-page-reviewed">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gxx-xs-eLO" firstAttribute="top" secondItem="lEc-9k-74e" secondAttribute="top" constant="19" id="2h2-yE-3Ry"/>
+                                    <constraint firstAttribute="height" constant="285" id="5cn-i4-jFr"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKd-UT-5Wo" secondAttribute="trailing" constant="19" id="BBO-Sa-Sax"/>
+                                    <constraint firstAttribute="trailing" secondItem="vY8-A4-uzI" secondAttribute="trailing" constant="19" id="HbR-07-DHr"/>
+                                    <constraint firstItem="vY8-A4-uzI" firstAttribute="top" secondItem="gxx-xs-eLO" secondAttribute="bottom" constant="1" id="VcY-6g-fHR"/>
+                                    <constraint firstItem="4Uf-fX-a2m" firstAttribute="top" secondItem="vY8-A4-uzI" secondAttribute="bottom" constant="20" id="gHG-36-gV4"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Uf-fX-a2m" secondAttribute="trailing" constant="19" id="mc6-z9-Acl"/>
+                                    <constraint firstItem="4Uf-fX-a2m" firstAttribute="leading" secondItem="lEc-9k-74e" secondAttribute="leading" constant="20" id="ms9-5j-xpn"/>
+                                    <constraint firstAttribute="trailing" secondItem="gxx-xs-eLO" secondAttribute="trailing" constant="19" id="sI1-0A-1ZP"/>
+                                    <constraint firstItem="mKd-UT-5Wo" firstAttribute="top" secondItem="4Uf-fX-a2m" secondAttribute="bottom" constant="16" id="tcP-UG-LVS"/>
+                                    <constraint firstItem="mKd-UT-5Wo" firstAttribute="leading" secondItem="lEc-9k-74e" secondAttribute="leading" constant="20" id="vJC-Tn-XUA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.050980392159999999" green="0.40784313729999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yam-Hc-rkb" firstAttribute="trailing" secondItem="lEc-9k-74e" secondAttribute="trailing" constant="12" id="HK4-bp-9wc"/>
+                            <constraint firstItem="lEc-9k-74e" firstAttribute="top" secondItem="Yam-Hc-rkb" secondAttribute="top" constant="70" id="J5D-AH-1lN"/>
+                            <constraint firstItem="lEc-9k-74e" firstAttribute="leading" secondItem="Yam-Hc-rkb" secondAttribute="leading" constant="13" id="z5I-vk-qgI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yam-Hc-rkb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CU8-6D-pEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3358" y="356"/>
         </scene>
         <!--المزيد-->
         <scene sceneID="KTy-M2-jdq">
@@ -1128,4 +1378,7 @@
         <image name="me" width="888" height="890"/>
         <image name="profile" width="640" height="640"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MV6-v1-5e2"/>
+    </inferredMetricsTieBreakers>
 </document>
