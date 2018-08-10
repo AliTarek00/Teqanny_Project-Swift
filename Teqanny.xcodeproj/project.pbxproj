@@ -28,6 +28,14 @@
 		84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C22118E53100074BDA /* 29ltbukraregular.otf */; };
 		84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B210C32118E53200074BDA /* 29ltbukralight.otf */; };
 		84D199B22119CBFB007E91D1 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D199B12119CBFB007E91D1 /* FancyImageView.swift */; };
+		84D77E55211E063C001C3DA4 /* course-ios-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E4D211E0638001C3DA4 /* course-ios-1.png */; };
+		84D77E56211E063C001C3DA4 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E4E211E0639001C3DA4 /* 2.png */; };
+		84D77E57211E063C001C3DA4 /* home1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E4F211E0639001C3DA4 /* home1a.png */; };
+		84D77E58211E063C001C3DA4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E50211E063A001C3DA4 /* 1.png */; };
+		84D77E59211E063C001C3DA4 /* course-ios-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E51211E063B001C3DA4 /* course-ios-2.png */; };
+		84D77E5A211E063C001C3DA4 /* home1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E52211E063B001C3DA4 /* home1.png */; };
+		84D77E5B211E063C001C3DA4 /* home3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E53211E063B001C3DA4 /* home3.png */; };
+		84D77E5C211E063C001C3DA4 /* home4.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D77E54211E063B001C3DA4 /* home4.png */; };
 		B0B18DAABC70B8A7045116D6 /* Pods_Teqanny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76652000BAA751D475A6E018 /* Pods_Teqanny.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +65,14 @@
 		84B210C22118E53100074BDA /* 29ltbukraregular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukraregular.otf; sourceTree = "<group>"; };
 		84B210C32118E53200074BDA /* 29ltbukralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukralight.otf; sourceTree = "<group>"; };
 		84D199B12119CBFB007E91D1 /* FancyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
+		84D77E4D211E0638001C3DA4 /* course-ios-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course-ios-1.png"; sourceTree = "<group>"; };
+		84D77E4E211E0639001C3DA4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		84D77E4F211E0639001C3DA4 /* home1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home1a.png; sourceTree = "<group>"; };
+		84D77E50211E063A001C3DA4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		84D77E51211E063B001C3DA4 /* course-ios-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course-ios-2.png"; sourceTree = "<group>"; };
+		84D77E52211E063B001C3DA4 /* home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home1.png; sourceTree = "<group>"; };
+		84D77E53211E063B001C3DA4 /* home3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home3.png; sourceTree = "<group>"; };
+		84D77E54211E063B001C3DA4 /* home4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home4.png; sourceTree = "<group>"; };
 		9D0217F55836F5D8148E356E /* Pods-Teqanny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teqanny.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teqanny/Pods-Teqanny.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +119,7 @@
 		84020E1121189C88007E16BF /* Teqanny */ = {
 			isa = PBXGroup;
 			children = (
+				84D77E4C211E0560001C3DA4 /* UI */,
 				84ACFD16211B53F500F5AE21 /* Utilities */,
 				84020E342118D7CA007E16BF /* Resources */,
 				84020E2C21189E87007E16BF /* Other */,
@@ -170,7 +187,6 @@
 				84B210C12118E52F00074BDA /* 29ltbukrabolditalic.otf */,
 				84B210C32118E53200074BDA /* 29ltbukralight.otf */,
 				84B210C22118E53100074BDA /* 29ltbukraregular.otf */,
-				847EACFE211D031F00D31665 /* review.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -191,6 +207,22 @@
 				847EACFC211CF4F600D31665 /* Common.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84D77E4C211E0560001C3DA4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				847EACFE211D031F00D31665 /* review.png */,
+				84D77E50211E063A001C3DA4 /* 1.png */,
+				84D77E4E211E0639001C3DA4 /* 2.png */,
+				84D77E4D211E0638001C3DA4 /* course-ios-1.png */,
+				84D77E51211E063B001C3DA4 /* course-ios-2.png */,
+				84D77E52211E063B001C3DA4 /* home1.png */,
+				84D77E4F211E0639001C3DA4 /* home1a.png */,
+				84D77E53211E063B001C3DA4 /* home3.png */,
+				84D77E54211E063B001C3DA4 /* home4.png */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,12 +292,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				84020E1D21189C88007E16BF /* LaunchScreen.storyboard in Resources */,
+				84D77E55211E063C001C3DA4 /* course-ios-1.png in Resources */,
+				84D77E56211E063C001C3DA4 /* 2.png in Resources */,
 				84B210C72118E53300074BDA /* 29ltbukralight.otf in Resources */,
 				84B210C42118E53300074BDA /* 29ltbukrabold.otf in Resources */,
 				84B210C62118E53300074BDA /* 29ltbukraregular.otf in Resources */,
 				84020E1A21189C88007E16BF /* Assets.xcassets in Resources */,
+				84D77E5B211E063C001C3DA4 /* home3.png in Resources */,
+				84D77E59211E063C001C3DA4 /* course-ios-2.png in Resources */,
+				84D77E5C211E063C001C3DA4 /* home4.png in Resources */,
 				84B210C52118E53300074BDA /* 29ltbukrabolditalic.otf in Resources */,
 				84020E1821189C88007E16BF /* Main.storyboard in Resources */,
+				84D77E58211E063C001C3DA4 /* 1.png in Resources */,
+				84D77E57211E063C001C3DA4 /* home1a.png in Resources */,
+				84D77E5A211E063C001C3DA4 /* home1.png in Resources */,
 				847EACFF211D031F00D31665 /* review.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

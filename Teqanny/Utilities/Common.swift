@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 public class Common
 {
     static func createAlertController(title : String, message: String, viewController: UIViewController)
@@ -35,11 +34,24 @@ public class Common
         
         //
         viewController.present(alertController, animated: true, completion: nil)
-        
-        
-        
-        
-        
+    }
+    
+    //
+    static func applyBlurEffect(theImage: UIImageView, theView: UIView, theStyle: UIBlurEffectStyle)
+    {
+        // apply blur effect
+        let blurEffect = UIBlurEffect(style: theStyle)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = theView.bounds
+        theImage.addSubview(blurEffectView)
     }
     
 } // end of class
+
+
+
+
+
+
+
+
