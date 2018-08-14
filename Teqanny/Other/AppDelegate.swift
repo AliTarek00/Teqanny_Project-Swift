@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         //
         
         //
-        UINavigationBar.appearance().barTintColor = UIColor(colorCode: 0x00aed5);
+        UINavigationBar.appearance().barTintColor = UIColor(colorCode: 0x0D6889);
         
         //
         UINavigationBar.appearance().tintColor = UIColor.white
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         UITabBar.appearance().barTintColor = UIColor(red: 236.0/255.0, green: 240.0/255.0, blue: 241.0/255.0, alpha: 1.0);
         
         //
-        UITabBar.appearance().tintColor = UIColor(colorCode: 0x00aed5);
+        UITabBar.appearance().tintColor = UIColor(colorCode: 0x0D6889);
         
         //
         return true

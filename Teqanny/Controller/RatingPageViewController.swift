@@ -27,7 +27,7 @@ class RatingPageViewController: UIViewController
         super.viewDidLoad()
 
         //
-        Common.applyBlurEffect(theImage: backgroundImageView, theView: self.view, theStyle: UIBlurEffectStyle.light);
+        Common.applyBlurEffect(theImage: backgroundImageView, theView: self.view, theStyle: UIBlurEffectStyle.dark);
     }
 
     //

@@ -220,42 +220,6 @@ class CoursePageViewController: UIViewController, MKMapViewDelegate
     }
     
     //
-    func getRequest(_ url: String)
-    {
-        //
-        let request = URLRequest(url: URL(string: url)!);
-        
-        //
-        let task = URLSession.shared.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: NSError?) -> Void in
-          
-            //
-            if let data = data
-            {
-                do
-                {
-                    let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as!
-                        [[String: AnyObject]];
-                    
-                    for data in jsonData
-                    {
-                        // print all courses titles
-                        print(data["title"]!);
-                    }
-                }
-                catch
-                {
-                    print("json error : \(error)");
-                }
-            }
-            
-        } as! (Data?, URLResponse?, Error?) -> Void)
-        
-        //
-        task.resume();
-        
-    } // get request
-    
-    //
     @objc func share()
     {
         //
