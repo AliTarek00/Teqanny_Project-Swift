@@ -36,7 +36,7 @@ class CoursePageViewController: UIViewController, MKMapViewDelegate
     @IBOutlet weak var courseBGHeight: NSLayoutConstraint!
     @IBOutlet weak var courseCoverViewHeight: NSLayoutConstraint!
     
-    //
+    // //
     override func viewDidLoad()
     {
         //
