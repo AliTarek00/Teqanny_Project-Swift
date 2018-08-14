@@ -31,7 +31,6 @@ class Course
     var courseLike:Bool
     
     //
-    //
     init(jsonObject: [String: Any])
     {
         //
